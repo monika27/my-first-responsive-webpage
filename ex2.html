@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.second{
+
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    color: white;
+    text-align: center;
+    padding:0px;
+    text-decoration: none;
+}
+.third{
+     height:100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    color: white;
+    text-align: center;
+
+    text-decoration: none;
+    
+
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+li  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: red;
+}
+img{
+ opacity:0.5;
+}
+</style>
+</head>
+<body>
+<div class="first">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">New</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+<div class="second">
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="http://www.planwallpaper.com/static/images/bicycle-1280x720.jpg" style="width:300%">
+  <img class="mySlides" src="http://randomstory.org/wp-content/uploads/2013/07/41-Best-and-Coolest-Collection-HD-Wallpapers-Ever-1.jpg" style="width:300%">
+  <img class="mySlides" src="https://candiesandcrunches.files.wordpress.com/2013/12/thank-you.jpg" style="width:300%">
+  
+  
+  
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+<div class="third">
+<ul>
+  <li>8,park strt,<br>srinagar colony,<br>kumbakonam.<br></li>
+  <li>Email:moni*************sini94@gmail.com<br>Phone:99*********69</li>
+  <li>my blog<br>portfolio<br>sample</li>
+  
+</ul>
+</div>
+</body>
+</html>
